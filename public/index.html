@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+    <title>Roster</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <label>Pre-Openning from:</label>
+        <div class="select width1">
+          <select id="time-pre-select"></select>
+        </div>
+        <div class="div btn">
+          <button id="increment-pre-btn">+</button>
+          <button id="decrement-pre-btn">-</button>
+        </div>
+        <p>Total: <span id="total-pre"></span> hours.</p>
+      </div>
+
+      <div class="card">
+        <label>Openning from:</label>
+        <div class="select width1">
+          <select id="time-open-select"></select>
+        </div>
+        <div class="div btn">
+          <button id="increment-open-btn">+</button>
+          <button id="decrement-open-btn">-</button>
+        </div>
+        <p>Total: <span id="total-open"></span> hours.</p>
+      </div>
+
+      <div class="card">
+        <label>Closing from:</label>
+        <div class="select width1">
+          <select id="time-close-select"></select>
+        </div>
+        <div class="div btn">
+          <button id="increment-close-btn">+</button>
+          <button id="decrement-close-btn">-</button>
+        </div>
+        <p>Total: <span id="total-close"></span> hours.</p>
+      </div>
+    </div>
+
+    <div class="container width-small">
+      <label class="margin-top-bottom"><strong>Templates:</strong></label>
+	  <div class="select">
+        <select id="roster-template-select">
+          <option>Select Roster</option>
+        </select>
+      </div>
+      <button id="save-roster" class="margin-top-bottom">SAVE ROSTER</button>
+    </div>
+
+    <div class="container-col">
+      <div class="flex-row">
+        <button id="add-row-open-btn" class="add-row-btn">+</button>
+        <table>
+          <thead>
+            <tr id="labour-hours-open-head"></tr>
+            <tr id="time-open-head"></tr>
+          </thead>
+          <tbody id="open-row"></tbody>
+        </table>
+      </div>
+
+      <div class="container">
+        <div class="flex-row">
+          <button id="add-row-pre-btn" class="add-row-btn">+</button>
+          <table>
+            <thead>
+              <tr id="time-pre-head"></tr>
+            </thead>
+            <tbody id="pre-row"></tbody>
+          </table>
+        </div>
+
+        <div class="flex-row">
+          <button id="add-row-close-btn" class="add-row-btn">+</button>
+          <table>
+            <thead>
+              <tr id="time-close-head"></tr>
+            </thead>
+            <tbody id="close-row"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
